@@ -17,6 +17,16 @@ header {
   text-align: center;
 }
 
+.container-text {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: justify; 
+  padding: 20px;
+  /*text-indent: 30px;*/
+}
+
 .perfil {
   display: flex; 
   align-items: center; 
@@ -30,11 +40,11 @@ header {
 }
 
 .info-perfil h1 {
-  margin: 0; /* Remove margens padrão do h1 */
+  margin: 0; 
 }
 
 .info-perfil p {
-  margin: 0; /* Remove margens padrão do parágrafo */
+  margin: 0; 
 }
 
 h1 {
@@ -129,6 +139,80 @@ h2 {
   text-decoration: none;
 }
 
+.featured-projects h2 {
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-rotativo {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  animation: slideAnimation 10s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%; 
+  max-height: 300px; 
+  object-fit: cover; 
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@keyframes slideAnimation {
+  0% {
+      transform: translateX(0%);
+  }
+  25% {
+      transform: translateX(0%);
+  }
+  30% {
+      transform: translateX(-100%);
+  }
+  55% {
+      transform: translateX(-100%);
+  }
+  60% {
+      transform: translateX(-200%);
+  }
+  85% {
+      transform: translateX(-200%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+
 footer {
   background: linear-gradient(135deg, #6E1BA6, #774AD9); 
   text-align: center;
@@ -142,6 +226,10 @@ footer {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
+}
+
+.social-media img {
+  width: 60px;   
 }
 
 @media (max-width: 768px) {
