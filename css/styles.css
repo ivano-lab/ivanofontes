@@ -11,6 +11,21 @@ header {
   padding: 20px 0;
 }
 
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+}
+
+.blog {
+  text-align: center;
+  width: 80%;
+  padding: 100px 0;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -166,15 +181,17 @@ h2 {
 }
 
 .slide {
+  text-align: center;
   min-width: 100%;
   box-sizing: border-box;
   position: relative;
 }
 
 .slide img {
-  width: 100%; 
+  width: 80%; 
   max-height: 300px; 
   object-fit: cover; 
+  border-radius: 3%;
 }
 
 .text {
@@ -221,12 +238,12 @@ footer {
 }
 
 .contact-form-container {
-  max-width: 500px;
+  max-width: 60%;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #181926;
 }
 
 
@@ -240,10 +257,10 @@ label {
 }
 
 input, textarea {
-  width: 100%;
+  width: 85%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: solid 1px #ccc;
   border-radius: 4px;
 }
 
@@ -316,6 +333,12 @@ button:hover {
     width: 100%; 
     max-height: 300px; 
     object-fit: cover; 
+  }
+
+  .blog {
+    text-align: center;
+    width: 100%;
+    padding: 100px 0;
   }
 
   .footer-container {
