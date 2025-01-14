@@ -248,7 +248,7 @@ footer {
     flex-direction: column; 
     width: 100%; 
     position: absolute;
-    top: 250px; 
+    top: 200px; 
     left: 0;
     z-index: 1; 
     max-height: 0; 
