@@ -26,12 +26,16 @@ main {
   padding: 100px 0;
 }
 
-.container {
-  border: solid 3px;
-  width: 95%;
+.container.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
+
+
 
 .container-text {
   display: flex;
@@ -322,7 +326,6 @@ button:hover {
   }
 
   .menu-toggle {
-      border: solid 3px;
       display: flex; 
       flex-direction: column;
       cursor: pointer;
@@ -336,15 +339,13 @@ button:hover {
   }
 
   .perfil {
-    width: 80%;
-    border: solid 3px;
+    width: 100%;
   }
 
   .foto-perfil {
     width: 100px; 
     height: auto; 
     border-radius: 50%; 
-    margin-right: 20px; 
   }
 
   .blog {
