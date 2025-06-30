@@ -8,8 +8,38 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<body onload="renderHeader(); renderFooter()" >
-   <header id="mainheader"></header>
+<body>
+   <header>
+        <div class="container">
+            <a href="index.html">
+                <div class="perfil">
+                  <img src="img/perfil.jpg" alt="minha foto" class="foto-perfil">
+                  <div class="info-perfil">
+                      <h1>Ívano Fontes</h1>
+                      <hr>
+                      <p>Desenvolvedor Web</p>
+                  </div>
+                </div>
+            </a>
+            <nav>
+              <div class="menu-toggle" id="mobile-menu">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+              </div>
+              <div class="nav-menu" id="nav-menu">
+                <nav>
+                    <ul style="list-style:none; display:flex; gap:20px; padding:0;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="form.html">Contato</a></li>
+                    </ul>
+                </nav>
+              </div>
+            </nav>
+        </div>
+    </header>
   <h1>Serviços Rápidos em Web Full Stack</h1>
   <p>Confira abaixo os biscates que ofereço para freelas rápidos e pequenos jobs:</p>
   <ul class="service-list">
@@ -26,8 +56,5 @@
       Setup inicial de blog com posts e menu. Preço: R$ 400,00
     </li>
   </ul>
-
-  <footer id="mainfooter"></footer>
-  <script src="scripts/scripts.js"></script> 
 </body>
 </html>
