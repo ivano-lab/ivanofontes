@@ -30,7 +30,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -346,6 +346,11 @@ button:hover {
     width: 100px; 
     height: auto; 
     border-radius: 50%; 
+  }
+
+  h1 {
+    font-size: 23px; 
+    margin-bottom: 10px; 
   }
 
   .blog {
