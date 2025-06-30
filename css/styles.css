@@ -35,8 +35,6 @@ main {
   text-align: center;
 }
 
-
-
 .container-text {
   display: flex;
   flex-direction: column; 
@@ -243,16 +241,32 @@ footer {
 }
 
 .contact-form-container {
-  max-width: 60%;
-  margin: 0 auto;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #181926;
+}
+
+.service-list {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #181926;
 }
 
+.service-list a {
+  color: #774AD9; 
+  text-decoration: none; 
+  display: block; 
+  margin-bottom: 10px; 
+}
+
 h2 {
   text-align: center;
+}
+
+p {
+  text-indent: 2em;
 }
 
 label {
