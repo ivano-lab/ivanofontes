@@ -8,8 +8,38 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     
 </head>
-<body onload="renderHeader(); renderFooter(); mostrarSlides()">
-    <header id="mainheader"></header>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <div class="perfil">
+                  <img src="img/perfil.jpg" alt="minha foto" class="foto-perfil">
+                  <div class="info-perfil">
+                      <h1>Ívano Fontes</h1>
+                      <hr>
+                      <p>Desenvolvedor Web</p>
+                  </div>
+                </div>
+            </a>
+            <nav>
+              <div class="menu-toggle" id="mobile-menu">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+              </div>
+              <div class="nav-menu" id="nav-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="form.html">Contato</a></li>
+                    </ul>
+                </nav>
+              </div>
+            </nav>
+        </div>
+    </header>
 
     <section id="sobre">
         <div class="container-text">
@@ -24,35 +54,44 @@
     </section>
 
     <section class="featured-projects">
-        <h2>Portfólio</h2>
+        <h2>Projetos</h2>
         <section class="banner-rotativo">
             <div class="slides">
                 <div class="slide fade">
                     <img src="img/banner/banner1.png" alt="Banner 1">
                 </div>
+                
                 <div class="slide fade">
                     <img src="img/banner/banner2.png" alt="Banner 2">
                 </div>
                 <div class="slide fade">
                     <img src="img/banner/banner3.png" alt="Banner 3">
                 </div>
-                <div class="slide fade">
-                    <img src="img/banner/banner4.png" alt="Banner 4">
-                </div>
-                <div class="slide fade">
-                    <img src="img/banner/banner5.png" alt="Banner 5">
-                </div>
-                <div class="slide fade">
-                    <img src="img/banner/banner6.png" alt="Banner 6">
-                </div>
-                <div class="slide fade">
-                    <img src="img/banner/banner7.png" alt="Banner 7">
-                </div>
             </div>
         </section>
     </section>
 
-    <footer id="mainfooter"></footer>
-    <script src="scripts/scripts.js"></script> 
+    <section class="blog">
+        <div class="container-text">
+            <h2>blog</h2>
+            <p>Conferira o blog do desenvolvedor! Aqui, você encontrará artigos sobre tendências em tecnologia e insights valiosos.</p>
+            <a href="blog.html" class="btn">Explore os posts</a>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="social-media">
+            <h3>Siga-me nas redes sociais:</h3>
+            <a href="https://www.facebook.com/doze.bluebelt" target="_blank"><img src="img/facebook_icon-icons.com_53612.png" alt="fabebook logo"></a>
+            <a href="https://www.instagram.com/ivanofontes/" target="_blank"><img src="img/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt=" intagramlogo"></a>
+            <a href="https://www.linkedin.com/in/ívano-fontes/" target="_blank"><img src="img/linkedin_socialnetwork_17441.png" alt="linkedin logo"></a>
+        </div>
+        <div class="container">
+            <p>&copy; 2025 Ívano Fontes. Todos os direitos reservados.</p>
+        </div>
+      </div>  
+    </footer>
+        <script src="scripts/scripts.js"></script> 
 </body>
 </html>

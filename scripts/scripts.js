@@ -1,6 +1,11 @@
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.getElementById('nav-menu');
 
+mobileMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('active'); 
+});
+
 function renderFooter() {
     const footerContent = `
         <div class="footer-container">
@@ -25,7 +30,7 @@ function renderHeader() {
         <div class="info-perfil">
             <h1>Ívano Fontes</h1>
             <hr>
-            <p>Desenvolvedor Web</p>
+            <p>Desenvolvedor Fullstack</p>
         </div>
         </div>
         <nav>
@@ -36,41 +41,12 @@ function renderHeader() {
             </div>
             <div class="nav-menu" id="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="form.html">Contato</a></li>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="form.html">contato</a></li>
+                <li><a href="#blog">blog</a></li>
             </ul>
             </div>
         </nav>
         </div>`;
     document.getElementById("mainheader").innerHTML = headerContent;
 }
-
-mobileMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    mobileMenu.classList.toggle('active'); 
-});
-
-let slideIndex = 0;
-
-function mostrarSlides() {
-  const slides = document.querySelectorAll('.slide');
-  if (slides.length === 0) return;
-
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
-
-  const offset = -slideIndex * 100;
-  document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-
-  setTimeout(mostrarSlides, 4000); // troca a cada 4 segundos
-}
-
-document.addEventListener('DOMContentLoaded', mostrarSlides);
-
-
-
-
