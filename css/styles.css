@@ -240,6 +240,26 @@ footer {
   padding: 10px 0;
 }
 
+.parallax {
+  /* Troque pelo caminho da sua imagem */
+  /*background-image: url('img/whatsapp-logo-4456.png');*/
+  height: 500px;
+  background-attachment: fixed; /* O segredo do parallax! */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imagem-flutuante {
+  position: fixed; /* fixa a imagem em relação à viewport */
+  bottom: 20px;    /* distância do rodapé da tela */
+  right: 20px;     /* distância da borda direita da tela */
+  width: 100px;    /* ajuste o tamanho conforme desejar */
+  height: auto;
+  z-index: 1000;   /* para garantir que fique sobre outros elementos */
+}
+
+
 .contact-form-container {
   list-style: none;
   border: 1px solid #ccc;
